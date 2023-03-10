@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 화면 확대 불가능으로 지정해보기 -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" 
+        content="width=device-width,
+        initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>SHIN_YUJIN</title>
     <link rel="stylesheet" href="../CSS/MainHome_css.css">
 </head>
 <body>
-    <header class="header_name">Hi! Yujin!</header>
-    <div class="MainHome_navDiv">
-        <!-- menu바 보완필요 -->
-        <nav class="MainHome_nav">
-            <ui>
-                <li><a href="./AboutMe_Main.html">About Me</a></li>
-                <li><a href="#">했던것</a></li>
-                <li><a href="#">하는것</a></li>
-                <li><a href="#">하고싶은것</a></li>
-                <li><a href="#">contact</a></li>
-            </ui>
-        </nav>
-    </div>
+    <header class="MainHome_header">Hi! Yujin!</header>
+
+    <main class="MainHome_main">
+        <div class="MainHome_navDiv">
+            <!-- menu바 보완필요 -->
+            <nav class="MainHome_nav">
+                <ui>
+                    <li><a href="./YUJINpedia.html">About Me</a></li>
+                    <li><a href="#">했던것</a></li>
+                    <li><a href="#">하는것</a></li>
+                    <li><a href="#">하고싶은것</a></li>
+                    <li><a href="#">contact</a></li>
+                </ui>
+            </nav>
+        </div>
+        <div>
+            <form action="">
+            <label class="MainHome_search" for="name"></label>
+            <input id="MainHome_search" type="search" placeholder="검색" title="검색어를 입력하세요." required>
+            <button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"><i id="learntocode_searchicon" class="fa fa-search"> 검색</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

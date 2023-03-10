@@ -1,38 +1,76 @@
-body{
+*{
     margin: 0;
     padding: 0;
+}
+body{
     background-color: bisque;
 }
 li{
     list-style: none;
 }
-.header_name{
-    /* background-color: aqua; */
-    color: green;
-    font-size: 200px;
-    font-weight: 900;
-    height: 500px;
-    line-height: 500px;
-    text-align: center;
+a{
+    text-decoration: none;
+}
+/* width값에 따른 반응형 웹 */
+/* @media (max-width: 500px){
+    a {
+        background-color: red;
+    }
+}
+@media (min-width: 501px) and (max-width: 700px){
+    a {
+        background-color: orange;
+    }
+}
+@media (min-width: 701px){
+    a {
+        background-color: yellow;
+    }
+} */
+.MainHome_header{
     text-transform: uppercase;
+    color: green;
+    font-size: 10vw;
+    /* background-color: aqua; */
+    /* 뷰포트 기준으로 적어보기 */
+    /* font-weight: 40px; */
+    height: 30vh;
+    line-height: 30vh;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+.MainHome_main{
+    width: 80vw;
+    margin: 10vw auto;
+    border: 1px solid black;
+    
 }
 .MainHome_navDiv{
-    margin: 0 50px;
-    background-color: gray;
+    background-color: #80808050;
+    /* width: 80vw; */
+    /* margin: 0; */
+    border: 2px solid black;
+    /* justify-content: space-between; */
 }
 .MainHome_nav li{
+    border: 3px solid black;
     box-sizing:border-box;
     color: green;
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 600;
-    width: 15%;
+    /* width: 20%; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     height: 50px;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     /* border-right: 1px solid black; */
-    float: left;
+    /* 플랙스 그리드로 변경하기 */
+    /* 플로트 플렉스 그리드 순으로 다써보기 */
+    /* float: left; */
 }
 
 .MainHome_nav :hover{
@@ -40,3 +78,4 @@ li{
     background-color: #ffffff79;
     text-shadow: 4px 4px 3px #666;
 }
+/* border-radius: var(--ntp-realbox-border-radius); */
