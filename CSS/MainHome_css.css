@@ -41,41 +41,40 @@ a{
     justify-content: center;
 }
 .MainHome_main{
-    width: 80vw;
-    margin: 10vw auto;
     border: 1px solid black;
-    
+    background-color: #66666670;
 }
 .MainHome_navDiv{
-    background-color: #80808050;
-    /* width: 80vw; */
-    /* margin: 0; */
+    margin: auto auto;
+    height: 5vh;
     border: 2px solid black;
-    /* justify-content: space-between; */
 }
 .MainHome_nav li{
-    border: 3px solid black;
+    justify-content: center;
+    border: 3px solid red;
     box-sizing:border-box;
     color: green;
     font-size: 2vw;
-    font-weight: 600;
-    /* width: 20%; */
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    height: 50px;
-    line-height: 50px;
+    font-weight: 3vw;
+    width: 15vw;
+    height: 5vh;
+    line-height: 5vh;
     text-align: center;
     text-transform: uppercase;
-    display: inline-block;
-    /* border-right: 1px solid black; */
+    display: inline-block;//
     /* 플랙스 그리드로 변경하기 */
     /* 플로트 플렉스 그리드 순으로 다써보기 */
     /* float: left; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* grid-template-columns: repeat(5, 1fr); */
 }
 
 .MainHome_nav :hover{
     color: white;
-    background-color: #ffffff79;
+    /* background-color: #ffffff79; */
     text-shadow: 4px 4px 3px #666;
+    transition: background-color #ffffff79;
 }
 /* border-radius: var(--ntp-realbox-border-radius); */
