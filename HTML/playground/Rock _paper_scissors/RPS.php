@@ -29,7 +29,7 @@ if( $rsp1 === 0 ){
 echo $name1.$col.$r1;
 }
 else if ( $rsp1 === 1 ){
-    echo $name1.$col.$s1;s
+    echo $name1.$col.$s1;
 }
 else {
     echo $name1.$col.$p1;
