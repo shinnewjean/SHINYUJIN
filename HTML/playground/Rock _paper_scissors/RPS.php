@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body>78
     <!-- htdos -->
     <h1>가위바위보 게임을 시작하겠습니다.(거절금지)</h1>
 
@@ -63,4 +63,6 @@ else if (( $rsp1===0 && $rsp2===2 )||( $rsp1===1 && $rsp2===0 )||( $rsp1===2 && 
 else {
     echo $draw;
 }
+
+
 ?>
