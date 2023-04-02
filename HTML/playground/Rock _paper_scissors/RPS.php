@@ -29,7 +29,7 @@ if( $rsp1 === 0 ){
 echo $name1.$col.$r1;
 }
 else if ( $rsp1 === 1 ){
-    echo $name1.$col.$s1;s
+    echo $name1.$col.$s1;
 }
 else {
     echo $name1.$col.$p1;
@@ -56,6 +56,7 @@ $draw = " draw!!";
 if(( $rsp1===0 && $rsp2===1 )||( $rsp1===1 && $rsp2===2 )||( $rsp1===2 && $rsp2===0 )){
 echo $name1.$win;
 }
+// esdlrfma"Wkm
 // 0주먹 2보                         1가위 0주먹                2보 1가위
 else if (( $rsp1===0 && $rsp2===2 )||( $rsp1===1 && $rsp2===0 )||( $rsp1===2 && $rsp2===1 )){
     echo $name2.$win;
